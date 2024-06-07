@@ -1,0 +1,14 @@
+<h2>Dashboard</h2>
+<button (click)="logout()">Logout</button>
+<ngx-charts-bar-vertical
+  [results]="analytics"
+  [view]="[700, 400]"
+  [scheme]="colorScheme"
+  [xAxis]="true"
+  [yAxis]="true"
+  [legend]="true"
+  [showXAxisLabel]="true"
+  [showYAxisLabel]="true"
+  [xAxisLabel]="'Consumption'"
+  [yAxisLabel]="'Value'">
+</ngx-charts-bar-vertical>
